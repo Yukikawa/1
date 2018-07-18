@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="portrait">
+    <head>
+            <meta charset="utf-8">
+        <title>北京二手房商业分析</title>
+    <script src="echarts.min.js"></script>
+    </head>
+
+    <body>
+            <div class="container-fluid" id="1">
+                    <h1 class="c-heading heading_IVEfJF">引言</h1>
+                    <p class="c-paragraph paragraph_3vDouX">    提到中国形象，就必然缺少不了西方人作为他者的眼光。时至今日，
+                        中美关系成为当今世界最重要的双边关系之一，中国也在美国新闻、
+                        影视作品中出现频率越来越高。然而，大多美国媒体对中国的理解不免会掺杂着不同程度的刻板成见，
+                        这让中国人意识到美国大众对中国文化可能仍然存在一些“误解”。反观美国文化在中国的高普及度以后，
+                        国人不禁开始思考：他们对中国的了解与喜爱程度到底是怎样的？<br/><br/>    伴随着这个问题，
+                        北京大学新闻与传播学院关世杰教授领衔的课题组先后于2011年底和2016年底借助美国在线调研机构对二十余个具有突出影响力的中国文化符号在美国人眼中的认知情况实施了调研。
+                        结果显示，现代中国让美国人获取了更多的了解和疑问，其中有好奇、羡慕，也有猜疑与不安，中国的形象正因此而变得更加复杂、多元、丰富。
+                        二十余个文化符号无法代表完整的中国，但它们管窥了中国文化在美国人眼中的大致模样，反映了两个国家在竞争与提防中相互认识、熟知的重要过程。</p>
+             </div>
+
+            <div id="main" style="width: 600px;height:400px;"></div>
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('main'));
+        
+                // 指定图表的配置项和数据
+                var option = {
+                    title: {
+                        text: 'ECharts 入门示例'
+                    },
+                    tooltip: {},
+                    legend: {
+                        data:['销量']
+                    },
+                    xAxis: {
+                        data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                    },
+                    yAxis: {},
+                    series: [{
+                        name: '销量',
+                        type: 'bar',
+                        data: [5, 20, 36, 10, 10, 20]
+                    }]
+                };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>        
+
+    </body>
+    </html>
